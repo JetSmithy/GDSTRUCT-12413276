@@ -38,7 +38,7 @@ public class SortDemo {
     }
 
     public static void main(String[] args) {
-        int[] arr1 = {5, 2, 9, 1, 7};
+        int[] arr1 = {9, 3, 2, 1, 7};
         int[] arr2 = arr1.clone();
         int[] arr3 = arr1.clone();
 

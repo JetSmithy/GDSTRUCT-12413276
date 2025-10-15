@@ -4,13 +4,9 @@ import java.util.Scanner; //for user input
 // Card CLASS
 class Card {
     private String name; //card name (e.g., "Card 5")
-
     public Card(String name) { this.name = name; } //constructor assigns name
-
     public String getName() { return name; } //getter for card name
-
     public String toString() { return "Card{" + "name='" + name + '\'' + '}'; } //how the card prints
-
     @Override
     public boolean equals(Object o) { //check if two cards are equal
         if (o == null || getClass() != o.getClass()) return false; //ensure same class

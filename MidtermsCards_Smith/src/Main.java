@@ -69,7 +69,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in); //scanner for pressing Enter
         Random random = new Random(); //random for commands
 
-        System.out.println("=== CARD DRAW SIMULATION GAME ==="); //intro
+        System.out.println("CARD DRAW SIMULATION GAME"); //intro
         System.out.println("Press Enter to start..."); //wait for input
         scanner.nextLine(); //wait for Enter
 
@@ -82,7 +82,7 @@ public class Main {
             switch (command) { //decide what to do this turn
                 case 0: //Draw cards
                     System.out.println("Command: DRAW " + x + " card(s)");
-                    for (int i = 0; i < x; i++) { // repeat x times
+                    for (int i = 0; i < x; i++) { //repeat x times
                         if (!playerDeck.isEmpty()) playerHand.push(playerDeck.pop()); //move from deck to hand
                         else { System.out.println("Deck is empty!"); break; } //stop if no cards left
                     }
@@ -97,7 +97,7 @@ public class Main {
                     break;
 
                 case 2://R cards
-                    System.out.println("Command: RETRIEVE " + x + " card(s) from discard pile");
+                    System.out.println("Command: Retrieve " + x + " card(s) from discard pile");
                     for (int i = 0; i < x; i++) {//repeat x times
                         if (!discardPile.isEmpty()) playerHand.push(discardPile.pop());//move from discard to hand
                         else { System.out.println("No cards in discard pile!"); break; }//stop if none
@@ -115,7 +115,7 @@ public class Main {
             scanner.nextLine(); //pause
         }
 
-        System.out.println("\n=== GAME OVER ==="); //when deck empty
+        System.out.println("\n Game Over"); //when deck empty
         System.out.println("The player deck is now empty!"); //final message
     }
 }

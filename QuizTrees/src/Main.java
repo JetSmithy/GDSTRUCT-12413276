@@ -31,7 +31,7 @@ class Node {
             return; //do nothing if duplicate
         }
 
-        if (value < data) {//if value is smaller → go left
+        if (value < data) {//if value is smaller 
 
             if (leftChild == null) { //if no left child exists
                 leftChild = new Node(value); //create a new node here
@@ -40,7 +40,7 @@ class Node {
             }
         }
 
-        else {// value is greater → go right
+        else {// value is greater 
 
             if (rightChild == null) {   //if no right child exists
                 rightChild = new Node(value); //create a new node
@@ -114,7 +114,7 @@ class Tree {
         }
     }
 
-    // Runs the in-order traversal (ascending)
+    // Runs the in-order traversal ascending
     public void inOrderTraverse() {
         if (root != null) { //only traverse if tree isn't empty
             root.inOrderTraverse();
